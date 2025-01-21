@@ -30,3 +30,21 @@ SELECT nome, estado
 FROM nomes
 ORDER BY nome;
 
+
+INSERT INTO nomes (nome, data_nascimento, email, telefone, estado)
+
+VALUES ('Adriano', '2001','adriano@gmail.com','1125346897','MG'),
+	   ('Gabriel','1998-05-12','gabriel@gmail.com','1235486795','RJ'),
+	   ('Maria', '2002-09-13','maria@gmail.com','1196654231','SP');
+
+
+SELECT *
+FROM nomes;
+
+Create table Cargos (
+	id int identity(1,1) primary key,
+	nome varchar(50),
+	salario decimal(10,2)
+	);
+ 
+select * from Cargos;
